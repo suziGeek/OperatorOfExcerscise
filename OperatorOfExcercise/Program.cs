@@ -9,7 +9,22 @@ namespace OperatorOfExcercise
             var r = new Random();
             var favNumber = r.Next(1, 1000);
 
-            var userInput = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Enter a number to guess what my favoritenumber is!");
+           
+                var userInput = int.Parse(Console.ReadLine());
+
+            if(favNumber < userInput)
+            {
+                Console.WriteLine($"To Low!");
+            }
+            else if ( favNumber > userInput)
+            {
+                Console.WriteLine($"To High!");
+            }
+            else 
+            { 
+                Console.WriteLine($"Never Mind..."); 
+            }
 
         }
     }
